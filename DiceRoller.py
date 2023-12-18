@@ -3,6 +3,7 @@ import random
 
 roll = "You rolled a {}!"
 
+
 def dice20():
     d20 = random.randrange(1, 21)
     print("Rolling...")
@@ -14,5 +15,7 @@ def dice20():
         print("CRITICAL SUCCESS!")
     elif dice20 == 1:
         print("CRITICAL FAIL!")
+
+
 
 dice20()
