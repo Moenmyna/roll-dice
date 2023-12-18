@@ -1,11 +1,18 @@
+import time
 import random
 
-dice20 = random.randrange(1, 21)
 roll = "You rolled a {}!"
 
-print(roll.format(dice20))
+def dice20():
+    d20 = random.randrange(1, 21)
+    print("Rolling...")
+    time.sleep(0.5)
+    
+    global roll
+    print(roll.format(d20))
+    if dice20 == 20:
+        print("CRITICAL SUCCESS!")
+    elif dice20 == 1:
+        print("CRITICAL FAIL!")
 
-if dice20 == 20:
-    print("CRITICAL SUCCESS!")
-elif dice20 == 1:
-    print("CRITICAL FAIL!")
+dice20()
