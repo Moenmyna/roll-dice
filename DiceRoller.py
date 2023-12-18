@@ -1,6 +1,6 @@
 import random
 
-dice20 = (random.randrange(1, 21))
+dice20 = random.randrange(1, 21)
 roll = "You rolled a {}!"
 
 print(roll.format(dice20))
