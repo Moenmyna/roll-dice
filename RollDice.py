@@ -11,9 +11,9 @@ def dice20():
     
     global roll
     print(roll.format(d20))
-    if dice20 == 20:
+    if d20 == 20:
         print("CRITICAL SUCCESS!")
-    elif dice20 == 1:
+    elif d20 == 1:
         print("CRITICAL FAIL!")
 
 def dice4():
