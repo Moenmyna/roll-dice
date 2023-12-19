@@ -64,4 +64,38 @@ def dice100():
     global roll
     print(roll.format(d100))
 
-dice100()
+def Choice():
+
+    print("1) d4")
+    print("2) d6")
+    print("3) d8")
+    print("4) d10")
+    print("5) d%")
+    print("6) d12")
+    print("7) d20")
+    
+    while True:
+        try:
+            userChoice = int(input("Please choose a dice to roll."))
+            break
+        except:
+            print("Please choose from the available options.")
+
+    if userChoice == 1:
+        dice4()
+    elif userChoice == 2:
+        dice6()
+    elif userChoice == 3:
+        dice8()
+    elif userChoice == 4:
+        dice10()
+    elif userChoice == 5:
+        dice100()
+    elif userChoice == 6:
+        dice12()
+    elif userChoice == 7:
+        dice20()
+    else:
+        print("Please choose from the available options.")
+
+Choice()
